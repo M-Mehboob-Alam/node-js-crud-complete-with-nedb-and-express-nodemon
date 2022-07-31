@@ -1,0 +1,27 @@
+{
+  "name": "node-crude-nedb",
+  "version": "1.0.0",
+  "description": "Student CRUDE Application APIs in Node Js & Express JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "Student",
+    "Crude",
+    "application",
+    "api",
+    "node",
+    "js",
+    "&",
+    "express",
+    "api"
+  ],
+  "author": "Mehboob Alam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nedb": "^1.8.0",
+    "nodemon": "^2.0.19"
+  }
+}
