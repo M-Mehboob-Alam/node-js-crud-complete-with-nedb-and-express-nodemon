@@ -1,21 +1,14 @@
-// including  express
 const express = require('express');
-// making contructor or initiating
 const app = express();
-
-// port
 const port = 4300;
-// including student module file
 const students = require('./students');
+app.use(express.json({limit:'50mb'}));
+app.use(express.urlencoded({extended: true}));
 
-// limiting response json not receiving response waiting
-app.use(express.json({limit: "54mb"}));
-// for understanding json format for node js
-app.use(express.urlencoded({extended:true}));
-
-
-// included students endpoint
-app.use('/api/v1/students', students);
-app.listen(port, function(){
-    console.log('server is running now');
-})
+app.get('/api/v1/test/' , function(req, res){
+    res.send('Node Crud is running now');
+    
+});
+// including students module 
+app.use('/', students);
+app.listen(port, ()=>{console.log('app is running now')});

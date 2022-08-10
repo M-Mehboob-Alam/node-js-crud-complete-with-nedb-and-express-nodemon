@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "7ac4d2ad-d1ba-4bf8-95ee-0e45ddec5785",
+		"name": "Dummy Test Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Smoke Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4300/api/v1/test",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"api",
+						"v1",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4300/api/v1/students",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"api",
+						"v1",
+						"students"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
